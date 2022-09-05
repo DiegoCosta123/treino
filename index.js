@@ -124,3 +124,66 @@
 
 // numeroDivisao();
 
+// function mediasAlunos(nota_1, nota_2, nota_3) {
+
+//     let notas = nota_1 + nota_2 + nota_3;
+
+//     let media = notas / 3;
+//     console.log(media);
+//     return media;
+// }
+
+// mediasAlunos(5, 3, 7);
+// mediasAlunos(3, 4, 1);
+// mediasAlunos(10, 8, 9);
+
+
+// function mediasAlunos(nota_1, nota_2, nota_3) {
+
+//     let notas = nota_1 + nota_2 + nota_3;
+
+//     let media = notas / 3;
+
+//     if(media >= 6) {
+//         return console.log("Aluno aprovado!" + media);
+//     }
+//     else if(media >=4) {
+//         return console.log("Aluno Recuperação!" + media)
+//     }
+//     else {
+//         return console.log("Aluno Reprovado!" + media);
+//     }
+
+//     console.log(media);
+//     return media;
+// }
+
+// mediasAlunos( 6, 8, 7);
+// mediasAlunos( 4, 4, 4);
+// mediasAlunos(10, 10, 10);
+
+
+
+// function mediasAlunos(nota_1, nota_2, nota_3) {
+
+//     let notas = nota_1 + nota_2 + nota_3;
+
+//     let media = notas / 3;
+
+//     if(media >= 6) {
+//         return console.log("Aluno aprovado: " + media);
+//     }
+//     else if(media >=4) {
+//         return console.log("Aluno Recuperação: " + media)
+//     }
+//     else {
+//         return console.log("Aluno Reprovado: " + media);
+//     }
+
+// }
+
+// mediasAlunos( 6, 8, 7);
+// mediasAlunos( 4, 4, 4);
+// mediasAlunos(10, 10, 10);
+
+
