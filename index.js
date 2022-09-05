@@ -3,6 +3,8 @@
 //const - Imutável
 //consola.log() é igual print (imprimir)
 
+// Rodar o projeto: yarn dev
+
 
 // - Exercício 2
 
@@ -186,4 +188,6 @@
 // mediasAlunos( 4, 4, 4);
 // mediasAlunos(10, 10, 10);
 
+
+//Crie uma função de segundo grau que tenha 3 parâmetros (a, b e c). O Delta precisa ter uma raiz exata, se for igual a 0 ou negativa, retorne console.log("raiz inválida, encerrado o programa"), caso contrário, prossiga com o cálculo da função
 
