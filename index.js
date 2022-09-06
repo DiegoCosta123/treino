@@ -5,7 +5,6 @@
 
 // Rodar o projeto: yarn dev
 
-
 // - Exercício 2
 
 // A fórmula para calcular a área de uma circunferência é definida como A = n * R². Considerando para este problema que n = 3,14159 :
@@ -29,7 +28,6 @@
 
 // simbolo ** significa potencial. Exemplo: R².
 
-
 // - Exercício 3
 
 // Escreva um programa que leia o número de um funcionário, seu número de horas trabalhadas em um mês e o valor que ele recebeu por hora. Imprima o número do funcionário e o salário que ele receberá no final do mês, com duas casas decimais.
@@ -49,7 +47,6 @@
 
 // console.log(salary);
 
-
 // - Exercício 4
 
 // Parte 1
@@ -65,7 +62,6 @@
 
 // console.log(yearOfBirth);
 
-
 // Parte 2
 // Previsão idade da pessoa
 
@@ -77,8 +73,6 @@
 // let ageResult = year - yearOfBirth;
 
 // console.log(ageResult);
-
-
 
 // - Exercicios 5 -> Função: Soma, subtração, multiplicação e divisão
 
@@ -96,7 +90,6 @@
 
 // numeroSomar();
 
-
 // -Subtração:
 
 // function numeroSubtracao() {
@@ -105,7 +98,6 @@
 // }
 
 // numeroSubtracao();
-
 
 // -Multiplicação:
 
@@ -116,7 +108,6 @@
 
 // numeroMultiplica();
 
-
 // -Divição:
 
 // function numeroDivisao() {
@@ -126,6 +117,7 @@
 
 // numeroDivisao();
 
+// - Exercicio 5
 // function mediasAlunos(nota_1, nota_2, nota_3) {
 
 //     let notas = nota_1 + nota_2 + nota_3;
@@ -138,7 +130,6 @@
 // mediasAlunos(5, 3, 7);
 // mediasAlunos(3, 4, 1);
 // mediasAlunos(10, 8, 9);
-
 
 // function mediasAlunos(nota_1, nota_2, nota_3) {
 
@@ -164,8 +155,6 @@
 // mediasAlunos( 4, 4, 4);
 // mediasAlunos(10, 10, 10);
 
-
-
 // function mediasAlunos(nota_1, nota_2, nota_3) {
 
 //     let notas = nota_1 + nota_2 + nota_3;
@@ -188,6 +177,56 @@
 // mediasAlunos( 4, 4, 4);
 // mediasAlunos(10, 10, 10);
 
+//- Exercicio 6:
 
+// - Raiz Quadrados:
+
+// function raizQuadrada(a, b) {
+//     let num = a;
+//     let raiz = Math.sqrt(num);
+//     console.log(raiz);
+//     return raiz;
+// }
+
+// raizQuadrada(81)
+// raizQuadrada(64)
+// raizQuadrada(49)
+// raizQuadrada(36)
+// raizQuadrada(25)
+// raizQuadrada(16)
+// raizQuadrada(9)
+// raizQuadrada(4)
+// raizQuadrada(1)
+
+//- Exercicio 7:
 //Crie uma função de segundo grau que tenha 3 parâmetros (a, b e c). O Delta precisa ter uma raiz exata, se for igual a 0 ou negativa, retorne console.log("raiz inválida, encerrado o programa"), caso contrário, prossiga com o cálculo da função
 
+// function segundoGrau(a, b, c) {
+//     let delta = b ** 2 - 4 * a * c;
+//     let deltaTemRaizPerfeita = Math.sqrt(delta) % 1 === 0;
+
+//     if(deltaTemRaizPerfeita && delta >= 0) {
+//         let raiz1 = -b + Math.sqrt(delta) / (2 * a);
+//         let raiz2 = -b - Math.sqrt(delta) / (2 * a);
+
+//         return console.log("x1: " + raiz1 + "\nx2: " + raiz2);
+//     }
+//     else {
+//         return console.log("Raiz inválida, encerrado o programa");
+//     }
+
+// }
+
+// segundoGrau(4, 0, -16);
+// segundoGrau(4, 0, 16);
+
+//- Exercicio 8:
+// A fórmula para calcular a área de uma circunferência é definida como A = π* R² Considerando para este problema que π = 3,14159 :
+
+// Calcule a área usando a fórmula dada na descrição do problema.
+
+// Entrada
+// A entrada contém um valor de ponto flutuante (precisão dupla), que é a variável R .
+
+// Resultado
+// Apresente a mensagem "A=" seguida do valor da variável, como no exemplo abaixo, com quatro casas após a vírgula. Use todas as variáveis ​​de precisão dupla. Como todos os problemas, não se esqueça de imprimir o final de linha após o resultado, caso contrário você receberá "Erro de apresentação".
