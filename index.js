@@ -283,3 +283,47 @@
 // console.log(pessoa.estado);
 
 // - Exercicio 10:
+
+// o professor tem as seguintes propriedades: nome, sobrenome profissão e matéria (qual matéria ele dá).
+// o aluno tem as seguintes propriedades: nome, idade sobrenome, ano (qual ano ele está, por exemplo, ensino médio, ensino fundamental ou jardim).
+
+// no final, vc vai ter que printar em um console.log para cada um a seguinte informacao:
+// console.log("O aluno (objeto.nome) (objeto.sobrenome) tem (objeto.idade) anos e está no (objeto.ano)").
+// console.log("(objeto.nome) (objeto.sobrenome) tem (objeto.idade) anos, é professor de (objeto.matéria)").
+
+let professor = {
+  nome: 'Eugênio',
+  sobrenome: 'Silva',
+  idade: 45,
+  profissao: 'professor',
+  disciplina: 'Inteligencia Artificial',
+};
+
+console.log(
+  professor.nome +
+    ' ' +
+    professor.sobrenome +
+    ' tem ' +
+    professor.idade +
+    ' anos, é professor de ' +
+    professor.disciplina
+);
+
+let aluno = {
+  nome: 'Diego',
+  sobrenome: 'Costa',
+  idade: '23',
+  periodo: 8,
+};
+
+console.log(
+  'O aluno ' +
+    aluno.nome +
+    ' ' +
+    aluno.sobrenome +
+    ' tem ' +
+    aluno.idade +
+    ' anos e está no ' +
+    aluno.periodo +
+    'º periodos'
+);
