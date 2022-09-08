@@ -230,3 +230,14 @@
 
 // Resultado
 // Apresente a mensagem "A=" seguida do valor da variável, como no exemplo abaixo, com quatro casas após a vírgula. Use todas as variáveis ​​de precisão dupla. Como todos os problemas, não se esqueça de imprimir o final de linha após o resultado, caso contrário você receberá "Erro de apresentação".
+
+function areaCircunf(r) {
+  let pi = 3.14159;
+  let valorLimite = (pi * r ** 2).toFixed(4);
+
+  return console.log('A = ' + valorLimite);
+}
+
+areaCircunf(2.0);
+areaCircunf(100.64);
+areaCircunf(150.0);
