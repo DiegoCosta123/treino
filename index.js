@@ -252,12 +252,34 @@
 // **Resultado**
 // Imprima DIFERENCA com todas as letras maiúsculas, conforme exemplo a seguir, com um espaço em branco antes e depois do sinal de igual.
 
-function valueProduct(a, b, c, d) {
-  let multProd = a * b - c * d;
+// function valueProduct(a, b, c, d) {
+//   let multProd = a * b - c * d;
 
-  return console.log('DIFERENÇA: ' + multProd);
-}
+//   return console.log('DIFERENÇA: ' + multProd);
+// }
 
-valueProduct(5, 6, 7, 8);
-valueProduct(0, 0, 7, 8);
-valueProduct(5, 6, -7, 8);
+// valueProduct(5, 6, 7, 8);
+// valueProduct(0, 0, 7, 8);
+// valueProduct(5, 6, -7, 8);
+
+//  - Novo Exemplo do Objeto:
+// let pessoa = {
+//   nome: 'Diego',
+//   cidade: 'Teresópolis',
+//   idade: 23,
+//   estado: 'RJ',
+// };
+
+// pessoa.nome = 'José';
+// console.log(pessoa.nome);
+
+// pessoa.cidade = 'Rio de Janeiro';
+// console.log(pessoa.cidade);
+
+// pessoa.idade = 150;
+// console.log(pessoa.idade);
+
+// pessoa.estado = 'RJ';
+// console.log(pessoa.estado);
+
+// - Exercicio 10:
