@@ -291,39 +291,211 @@
 // console.log("O aluno (objeto.nome) (objeto.sobrenome) tem (objeto.idade) anos e está no (objeto.ano)").
 // console.log("(objeto.nome) (objeto.sobrenome) tem (objeto.idade) anos, é professor de (objeto.matéria)").
 
-let professor = {
-  nome: 'Eugênio',
-  sobrenome: 'Silva',
-  idade: 45,
-  profissao: 'professor',
-  disciplina: 'Inteligencia Artificial',
-};
+// let professor = {
+//   nome: 'Eugênio',
+//   sobrenome: 'Silva',
+//   idade: 45,
+//   profissao: 'professor',
+//   disciplina: 'Inteligencia Artificial',
+// };
 
-console.log(
-  professor.nome +
-    ' ' +
-    professor.sobrenome +
-    ' tem ' +
-    professor.idade +
-    ' anos, é professor de ' +
-    professor.disciplina
-);
+// console.log(
+//   professor.nome +
+//     ' ' +
+//     professor.sobrenome +
+//     ' tem ' +
+//     professor.idade +
+//     ' anos, é professor de ' +
+//     professor.disciplina
+// );
 
-let aluno = {
-  nome: 'Diego',
-  sobrenome: 'Costa',
-  idade: '23',
-  periodo: 8,
-};
+// let aluno = {
+//   nome: 'Diego',
+//   sobrenome: 'Costa',
+//   idade: '23',
+//   periodo: 8,
+// };
 
-console.log(
-  'O aluno ' +
-    aluno.nome +
-    ' ' +
-    aluno.sobrenome +
-    ' tem ' +
-    aluno.idade +
-    ' anos e está no ' +
-    aluno.periodo +
-    'º periodos'
-);
+// console.log(
+//   'O aluno ' +
+//     aluno.nome +
+//     ' ' +
+//     aluno.sobrenome +
+//     ' tem ' +
+//     aluno.idade +
+//     ' anos e está no ' +
+//     aluno.periodo +
+//     'º periodos'
+// );
+
+//  - Exemplo Objeto com Função:
+
+// let pessoa = {
+//   idade: function idadePessoa() {
+//     let anoAtual = 2022;
+//     let anoNasc = 1999;
+
+//     let result = anoAtual - anoNasc;
+//     return result;
+//   },
+// };
+
+// console.log(pessoa.idade());
+
+//
+
+// - Exercicios 11:
+
+// cria uma nova propriedade que calcula o peso da pessoa
+// a fórmula é  IMC = peso / (altura x altura).
+
+// let pessoa = {
+//   idade: function idadePessoa() {
+//     let anoAtual = 2022;
+//     let anoNasc = 1999;
+
+//     let result = anoAtual - anoNasc;
+//     return result;
+//   },
+
+//   calculoImc: function calculoDoPeso(peso, altura) {
+//     let imc = (peso / (altura * altura)).toFixed(2);
+
+//     if (imc < 18.5) {
+//       console.log('Magreza: ' + imc);
+//       return imc;
+//     } else if (imc >= 18.5 && imc <= 24.9) {
+//       console.log('Peso normal: ');
+//       return imc;
+//     } else if (imc > 25 && imc <= 29.9) {
+//       console.log('Sobrepeso: ');
+//       return imc;
+//     } else if (imc > 30 && imc <= 34.9) {
+//       console.log('Obesidade grau I: ');
+//       return imc;
+//     } else if (imc > 35 && imc <= 40) {
+//       console.log('Obesidade grau II: ');
+//       return imc;
+//     } else {
+//       console.log('Obesidade grau III: ');
+//       return imc;
+//     }
+//   },
+// };
+// //                           peso    altura
+// console.log(pessoa.calculoImc(80.5, 1.8));
+
+
+// - Exercicios 12:
+
+// Em uma loja um aparelho de som que custava R$ 800,00 teve um desconto de 17% para pagamento à vista. O cliente que decidir comprar o equipamento nestas condições pagará quanto?
+
+// function productWithDiscount() {
+//   let percent = 17 / 100;
+//   let discount = percent * 800;
+//   let price = (800 - discount).toFixed(2);
+//   return console.log("R$" + price);
+// }
+
+// productWithDiscount();
+
+
+// function productWithDiscount(percentage, price) {
+//   let percent = percentage / 100;
+//   let discount = percent * price;
+//   let result = (price - discount).toFixed(2);
+//   return console.log("R$" + result);
+// }
+
+// //            porcento /  preço
+// productWithDiscount(29, 1800);
+
+
+// let lojaSom = {
+//   desconto: function descontoPreco() {
+//     let desc = 17 / 100;
+//     let price = desc * 800;
+//     console.log("O promoção foi: ");
+//     return price;
+//   }
+
+// }
+
+// console.log(lojaSom.desconto());
+
+
+// - Exercícios 13:
+// Neste último domingo, Caio saiu para andar de bicicleta e decidiu ir até à casa de seu amigo José, percorrendo 1,5 km.
+// De lá, os dois pedalaram até a casa de Sabrina, que ficava no quarteirão ao lado, 3 hm depois.
+// Os três amigos decidiram ir até o alto da serra da cidade, pedalando mais 4 km. De casa, até o alto da serra, Caio pedalou quantos metros?
+
+// function pedalTheDistance() {
+//   let totalMeters = 1500 + 300 + 4000;
+
+//   return console.log("Metros: " + totalMeters + "m");
+// }
+
+// pedalTheDistance()
+
+
+// - Exercícios 14:
+//                                                                   a     b    c
+// Utilizando a fórmula de Bhaskara, determine as raízes da equação: 2x² - 7x + 3 = 0
+
+// function bhaskara() {
+//   let potency = 7**2
+//   let equation = potency - 4 * 2 * 3;
+//   let deltaSquareRoot = Math.sqrt(equation);
+
+//   let x1 = (- (-7) + deltaSquareRoot) / (2 * 2);
+//   let x2 = (- (-7) - deltaSquareRoot) / (2 * 2);
+
+//   return console.log("X¹ = " + x1 + "\nX² = " + x2);
+// }
+
+// bhaskara();
+
+//          a     b    c
+// equação: 2x² - 7x + 3 = 0
+
+// function bhaskara(a, b, c) {
+//   let potency = b ** 2
+//   let equation = potency - 4 * a * c;
+//   let deltaSquareRootPerfect = Math.sqrt(equation) % 1 === 0;
+
+//   if (deltaSquareRootPerfect && equation >= 0) {
+//     let x1 = (- b + deltaSquareRootPerfect) / (2 * a);
+//     let x2 = (- b - deltaSquareRootPerfect) / (2 * a);
+
+//     return console.log("X¹ = " + x1 + "\nX² = " + x2);
+//   }
+//   else {
+//     return console.log("Raiz inválido");
+//   }
+// }
+
+// bhaskara(2, -7, 3);
+// bhaskara(-2, -7, 3);
+
+
+// - Exercicios 14.1
+// Qual a medida da diagonal do bloco retangular cujas medidas são 35 centímetros de altura, 20 centímetros de largura e 15 centímetros de comprimento?
+
+// function rectangularDiagonal() {
+//   let calc = (35 ** 2) + (20 ** 2) + (15 ** 2);
+//   let squareRoot = (Math.sqrt(calc)).toFixed(2);
+
+//   return console.log("O comprimento igual é: " + squareRoot + " cm");
+// }
+
+// rectangularDiagonal();
+
+// function rectangularDiagonal(h, a, b) {
+//   let calc = (h ** 2) + (a ** 2) + (b ** 2);
+//   let squareRoot = (Math.sqrt(calc)).toFixed(2);
+
+//   return console.log("O comprimento igual é: " + squareRoot + " cm");
+// }
+
+// rectangularDiagonal(35, 20, 15);
+
