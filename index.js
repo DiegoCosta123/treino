@@ -499,3 +499,193 @@
 
 // rectangularDiagonal(35, 20, 15);
 
+// - Área e Perímetro:
+// Qual a área e o perímetro de um campo de futebol, de base 25 m e altura 5 m?
+
+// Resposta: A= 125 m², P= 60 m
+
+// function perimeterArea(base, height) {
+//     let A = base * height;
+//     let P = base + height + base + height;
+
+//     return console.log("Multiplicar a base pela altura: A = " + A + "m²" + "\nO perímetro é a soma de todos os lados: P = " + P + "m");
+// }
+
+// perimeterArea(25, 5);
+
+//Calcule a área e o perímetro da figura a baixo:
+//Na figura temos um trapézio, para calcular sua área devemos somar a base maior com a base menor e multiplicar pela altura e dividir por dois.
+
+// function perimeter(B, b, h, H) {
+//     let A = ((B + b) * h) / 2;
+//     let P = B + b + H + H;
+
+//     return console.log("A = " + A + "cm²" + "\nP = " + P + " cm");
+// }
+
+// perimeter(10, 5, 6, 12);
+
+
+// Uma coroa circular é a região limitada por dois círculos concêntricos com raios de medidas distintas. Qual é a área de uma coroa circular cujos raios medem 10 cm e 20 cm?
+// Resposta: 942 cm2.
+
+// A = πR2 – πr2
+// A = π(R2 – r2)
+
+
+// function circularCrown() {
+//     let pi = 3.14;
+//     let potency1 = 20 ** 2;
+//     let potency2 = 10 ** 2;
+
+//     let A = pi * (potency1 - potency2);
+
+//     return console.log("A = " + A + " cm²");
+// }
+
+// circularCrown();
+
+// function circularCrown(R, r) {
+//     let pi = 3.14;
+
+//     let A = pi * ((R ** 2) - (r ** 2));
+
+//     return console.log("A = " + A + " cm²");
+// }
+
+// circularCrown(20, 10);
+
+
+// Exercícios sobre Geometria Plana:
+
+// Uma praça será construída no formato de um círculo de diâmetro medindo 12 metros. 
+// Para preservação da área verde da cidade, a prefeitura determinou que 60% dessa praça deve ser composta por área verde. 
+// Utilizando π= 3,1, podemos afirmar que a área verde da praça mede, em metros quadrados, aproximadamente:
+
+// Resposta: aproximamente 67 m².
+
+// function planeGeometry(r, prc) {
+//     let pi = 3.14;
+//     let potencyR = r ** 2;
+
+//     let A = pi * potencyR;
+//     let percent = (A * (prc / 100)).toFixed(0);
+
+//     return console.log("Área verde é de aproximamente: " + percent + " m²");
+// }
+
+// planeGeometry(5, 50);
+
+
+// Analise a forma geométrica a seguir, sabendo que a medida dos lados dessa figura foi dada em centímetros. Medidas base 12cm e altura 16 cm.
+
+// Resposta: A=96 cm2
+
+// function geometryCentimeters() {
+//     let altura = 16;
+//     let base = 12;
+
+//     let A = (altura * base) / 2;
+
+//     return console.log("A = " + A + " cm²");
+// }
+
+// geometryCentimeters();
+
+// function geometryCentimeters(a, b) {
+//     let A = (a * b) / 2;
+
+//     return console.log("A = " + A + " cm²");
+// }
+
+// geometryCentimeters(20, 15);
+
+
+// Número de PAR e IMPAR:
+
+// function numberParAndImpar(numero) {
+//     if (numero % 2 == 0) {
+//         return console.log("Par: " + numero);
+//     }
+//     else {
+//         return console.log("Impar: " + numero);
+//     }
+// }
+
+// numberParAndImpar(130)
+
+
+// Exercícios sobre o algoritmo da subtração:
+// Um piloto de avião está no meio de uma viagem internacional de 6 mil quilômetros. Se já havia passado 4.589 quilômetros, quanto ainda falta para percorrer?
+
+// function algoritmoSubtração(kmTotal, kmAtual) {
+//     let faltaPercorrer = kmTotal - kmAtual;
+
+//     return console.log("Ainda faltam: " + faltaPercorrer + " Km");
+// }
+
+// algoritmoSubtração(6000, 4589);
+
+
+// A área de serviço de um clube possui formato de retângulo. Nessa área, será colocado um cano para a passagem de esgoto, passando pela diagonal do terreno.
+// O cano passará pela região que está pontilhada, portanto o comprimento mínimo desse cano, em metros, deve ser de:
+
+// function pythagorasRectangle(h, b) {
+//     let straight = (h ** 2) + (b ** 2);
+//     let root = Math.sqrt(straight);
+
+//     return console.log("Teorema de Pitágoras é: " + root + " m");
+// }
+
+// pythagorasRectangle(8, 15);
+
+// Um terreno possui formato de triângulo retângulo com lados perpendiculares medindo 8 e 15 metros. 
+// Deseja-se cercar esse terreno com arame. Para cada metro de cerca serão gastos R$ 12,00. 
+// Assim, o valor gasto para cercar o terreno todo será de:
+
+// Resposta: R$ 480,00
+
+// function rectangleTerrainSide(m1, m2, price) {
+//     let hip = (m1 ** 2) + (m2 ** 2);
+//     let root = Math.sqrt(hip);
+
+//     let triangleSide = root + m2 + m1;
+
+//     let costsExpense = (triangleSide * price).toFixed(2);
+
+//     return console.log("Medida hipotenusa x desse triângulo: " + root + "\nA soma dos lados desse triângulo é igual: " + triangleSide + "\nO custo de gasto é: R$" + costsExpense)
+// }
+
+// rectangleTerrainSide(8, 15, 12);
+
+
+//Exercícios sobre tronco de cone
+
+// Um contêiner foi construído no formato de um tronco de cone reto, com raio maior de 4 m, raio menor de 1 m e altura de 4 m. 
+// Para a conservação do contêiner, foi contratado um pintor que cobra R$ 2,00 por m² para pintar a área externa.
+// Diante dessa situação, qual será o valor gasto para pintar todo o contêiner? (Use π = 3,1).
+
+function trunkCone() {
+    let pi = 3.14;
+    let potency1 = 4 ** 2;
+    let potency2 = (4 - 1) ** 2;
+    let potency3 = 1 ** 2;
+
+    let generatrix = potency1 + potency2;
+    let root = Math.sqrt(generatrix);
+
+    let largerBase = pi * potency1; // Base maior
+
+    let smallerBase = pi * potency3; // Base menor
+
+    let sideArea = pi * root * (4 + 1); // Area Lateral
+
+    let totalArea = largerBase + smallerBase + sideArea; // Area total
+
+    let amountCharged = totalArea * 2;
+
+    return console.log("Encontraremos sua geratriz: " + root + "m" + "\nBase maior: " + largerBase + "m²" + "\nBase menor: " + smallerBase + "m²" + "\nÁrea Lateral: " + sideArea + "m²" + "\nÁrea Total: " + totalArea + "m²" + "\nO valor pago será: R$" + amountCharged);
+}
+
+trunkCone();
+
