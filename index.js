@@ -689,3 +689,60 @@
 
 // trunkCone();
 
+
+// - Exercícios:
+// cria uma função para fazer a conversão de graus celcius para Fahrenheit
+
+// function celciusToFahrenheitConverter(c) {
+//     let f = ((c * 1.8) + 32).toFixed(1);
+
+//     console.log(c + "°C" + " = " + f + "°F");
+
+//     if (f >= 32 && f < 59) {
+//         return console.log("Muito frio");
+//     }
+//     else if (f >= 59 && f < 69) {
+//         return console.log("Morno");
+//     }
+//     else if (f >= 69.8 && f < 86) {
+//         return console.log("Calor");
+//     }
+//     else {
+//         return console.log("Muito Calor");
+//     }
+
+// }
+
+// celciusToFahrenheitConverter(5);
+
+// Nivel temperatura grau do tempo clima:
+
+function temperatureDegrees(c) {
+
+    let grau = (c).toFixed(1);
+
+    if (grau >= -15 && grau < 1) {
+        return console.log(grau + "°C" + " - Extremamente frio");
+    }
+    else if (grau >= 1 && grau < 14) {
+        return console.log(grau + "°C" + " - Muito frio");
+    }
+    else if (grau >= 14 && grau < 17) {
+        return console.log(grau + "°C" + " - Frio");
+    }
+    else if (grau >= 17 && grau < 21) {
+        return console.log(grau + "°C" + " - Morno");
+    }
+    else if (grau >= 21 && grau < 30) {
+        return console.log(grau + "°C" + " - Calor");
+    }
+    else if (grau >= 30 && grau < 35) {
+        return console.log(grau + "°C" + " - Muito calor");
+    }
+    else {
+        return console.log(c + "°C" + " - Super calor");
+    }
+}
+
+temperatureDegrees(52.8)
+
