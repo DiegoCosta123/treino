@@ -558,8 +558,8 @@
 
 // Exercícios sobre Geometria Plana:
 
-// Uma praça será construída no formato de um círculo de diâmetro medindo 12 metros. 
-// Para preservação da área verde da cidade, a prefeitura determinou que 60% dessa praça deve ser composta por área verde. 
+// Uma praça será construída no formato de um círculo de diâmetro medindo 12 metros.
+// Para preservação da área verde da cidade, a prefeitura determinou que 60% dessa praça deve ser composta por área verde.
 // Utilizando π= 3,1, podemos afirmar que a área verde da praça mede, em metros quadrados, aproximadamente:
 
 // Resposta: aproximamente 67 m².
@@ -639,8 +639,8 @@
 
 // pythagorasRectangle(8, 15);
 
-// Um terreno possui formato de triângulo retângulo com lados perpendiculares medindo 8 e 15 metros. 
-// Deseja-se cercar esse terreno com arame. Para cada metro de cerca serão gastos R$ 12,00. 
+// Um terreno possui formato de triângulo retângulo com lados perpendiculares medindo 8 e 15 metros.
+// Deseja-se cercar esse terreno com arame. Para cada metro de cerca serão gastos R$ 12,00.
 // Assim, o valor gasto para cercar o terreno todo será de:
 
 // Resposta: R$ 480,00
@@ -661,31 +661,31 @@
 
 //Exercícios sobre tronco de cone
 
-// Um contêiner foi construído no formato de um tronco de cone reto, com raio maior de 4 m, raio menor de 1 m e altura de 4 m. 
+// Um contêiner foi construído no formato de um tronco de cone reto, com raio maior de 4 m, raio menor de 1 m e altura de 4 m.
 // Para a conservação do contêiner, foi contratado um pintor que cobra R$ 2,00 por m² para pintar a área externa.
 // Diante dessa situação, qual será o valor gasto para pintar todo o contêiner? (Use π = 3,1).
 
-function trunkCone() {
-    let pi = 3.14;
-    let potency1 = 4 ** 2;
-    let potency2 = (4 - 1) ** 2;
-    let potency3 = 1 ** 2;
+// function trunkCone() {
+//     let pi = 3.14;
+//     let potency1 = 4 ** 2;
+//     let potency2 = (4 - 1) ** 2;
+//     let potency3 = 1 ** 2;
 
-    let generatrix = potency1 + potency2;
-    let root = Math.sqrt(generatrix);
+//     let generatrix = potency1 + potency2;
+//     let root = Math.sqrt(generatrix);
 
-    let largerBase = pi * potency1; // Base maior
+//     let largerBase = pi * potency1; // Base maior
 
-    let smallerBase = pi * potency3; // Base menor
+//     let smallerBase = pi * potency3; // Base menor
 
-    let sideArea = pi * root * (4 + 1); // Area Lateral
+//     let sideArea = pi * root * (4 + 1); // Area Lateral
 
-    let totalArea = largerBase + smallerBase + sideArea; // Area total
+//     let totalArea = largerBase + smallerBase + sideArea; // Area total
 
-    let amountCharged = totalArea * 2;
+//     let amountCharged = totalArea * 2;
 
-    return console.log("Encontraremos sua geratriz: " + root + "m" + "\nBase maior: " + largerBase + "m²" + "\nBase menor: " + smallerBase + "m²" + "\nÁrea Lateral: " + sideArea + "m²" + "\nÁrea Total: " + totalArea + "m²" + "\nO valor pago será: R$" + amountCharged);
-}
+//     return console.log("Encontraremos sua geratriz: " + root + "m" + "\nBase maior: " + largerBase + "m²" + "\nBase menor: " + smallerBase + "m²" + "\nÁrea Lateral: " + sideArea + "m²" + "\nÁrea Total: " + totalArea + "m²" + "\nO valor pago será: R$" + amountCharged);
+// }
 
-trunkCone();
+// trunkCone();
 
