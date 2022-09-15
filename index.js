@@ -715,34 +715,59 @@
 
 // celciusToFahrenheitConverter(5);
 
-// Nivel temperatura grau do tempo clima:
+// cria uma função para fazer a conversão de graus Fahrenheit para celcius
 
-function temperatureDegrees(c) {
+function fahrenheToCelciusitConverter(f) {
+    let c = ((f - 32) / 1.8).toFixed(1);
 
-    let grau = (c).toFixed(1);
+    console.log(f + "°F" + " = " + c + "°C");
 
-    if (grau >= -15 && grau < 1) {
-        return console.log(grau + "°C" + " - Extremamente frio");
+    if (c >= -30 && c < 15) {
+        return console.log("Muito frio");
     }
-    else if (grau >= 1 && grau < 14) {
-        return console.log(grau + "°C" + " - Muito frio");
+    else if (c >= 15 && c < 20) {
+        return console.log("Morno");
     }
-    else if (grau >= 14 && grau < 17) {
-        return console.log(grau + "°C" + " - Frio");
-    }
-    else if (grau >= 17 && grau < 21) {
-        return console.log(grau + "°C" + " - Morno");
-    }
-    else if (grau >= 21 && grau < 30) {
-        return console.log(grau + "°C" + " - Calor");
-    }
-    else if (grau >= 30 && grau < 35) {
-        return console.log(grau + "°C" + " - Muito calor");
+    else if (c >= 20.8 && c < 30) {
+        return console.log("Calor");
     }
     else {
-        return console.log(c + "°C" + " - Super calor");
+        return console.log("Muito Calor");
     }
+
 }
 
-temperatureDegrees(52.8)
+fahrenheToCelciusitConverter(105);
+
+
+// Nivel temperatura grau do tempo clima:
+
+// function temperatureDegrees(c) {
+
+//     let grau = (c).toFixed(1);
+
+//     if (grau >= -15 && grau < 1) {
+//         return console.log(grau + "°C" + " - Extremamente frio");
+//     }
+//     else if (grau >= 1 && grau < 14) {
+//         return console.log(grau + "°C" + " - Muito frio");
+//     }
+//     else if (grau >= 14 && grau < 17) {
+//         return console.log(grau + "°C" + " - Frio");
+//     }
+//     else if (grau >= 17 && grau < 21) {
+//         return console.log(grau + "°C" + " - Morno");
+//     }
+//     else if (grau >= 21 && grau < 30) {
+//         return console.log(grau + "°C" + " - Calor");
+//     }
+//     else if (grau >= 30 && grau < 35) {
+//         return console.log(grau + "°C" + " - Muito calor");
+//     }
+//     else {
+//         return console.log(c + "°C" + " - Super calor");
+//     }
+// }
+
+// temperatureDegrees(52.8)
 
