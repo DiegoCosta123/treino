@@ -690,56 +690,6 @@
 // trunkCone();
 
 
-// - Exercícios:
-// cria uma função para fazer a conversão de graus celcius para Fahrenheit
-
-// function celciusToFahrenheitConverter(c) {
-//     let f = ((c * 1.8) + 32).toFixed(1);
-
-//     console.log(c + "°C" + " = " + f + "°F");
-
-//     if (f >= 32 && f < 59) {
-//         return console.log("Muito frio");
-//     }
-//     else if (f >= 59 && f < 69) {
-//         return console.log("Morno");
-//     }
-//     else if (f >= 69.8 && f < 86) {
-//         return console.log("Calor");
-//     }
-//     else {
-//         return console.log("Muito Calor");
-//     }
-
-// }
-
-// celciusToFahrenheitConverter(5);
-
-// cria uma função para fazer a conversão de graus Fahrenheit para celcius
-
-function fahrenheToCelciusitConverter(f) {
-    let c = ((f - 32) / 1.8).toFixed(1);
-
-    console.log(f + "°F" + " = " + c + "°C");
-
-    if (c >= -30 && c < 15) {
-        return console.log("Muito frio");
-    }
-    else if (c >= 15 && c < 20) {
-        return console.log("Morno");
-    }
-    else if (c >= 20.8 && c < 30) {
-        return console.log("Calor");
-    }
-    else {
-        return console.log("Muito Calor");
-    }
-
-}
-
-fahrenheToCelciusitConverter(105);
-
-
 // Nivel temperatura grau do tempo clima:
 
 // function temperatureDegrees(c) {
@@ -770,4 +720,105 @@ fahrenheToCelciusitConverter(105);
 // }
 
 // temperatureDegrees(52.8)
+
+
+// - Exercícios:
+// cria uma função para fazer a conversão de graus celcius para Fahrenheit
+
+// function celciusToFahrenheitConverter(celcius) {
+//     let fahrenhe = ((celcius * 1.8) + 32).toFixed(1);
+
+//     console.log(celcius + "°C" + " Converter para " + fahrenhe + "°F");
+
+//     if (fahrenhe >= 32 && fahrenhe < 59) {
+//         return console.log("Muito frio");
+//     }
+//     else if (fahrenhe >= 59 && fahrenhe < 69) {
+//         return console.log("Morno");
+//     }
+//     else if (fahrenhe >= 69.8 && fahrenhe < 87) {
+//         return console.log("Calor");
+//     }
+//     else {
+//         return console.log("Muito Calor");
+//     }
+
+// }
+
+// celciusToFahrenheitConverter(35);
+
+
+// cria uma função para fazer a conversão de graus Fahrenheit para Celsius
+
+// function fahrenheToCelciusitConverter(fahrenheit) {
+//     let celsius = ((fahrenheit - 32) / 1.8).toFixed(1);
+
+//     console.log(fahrenheit + "°F" + " Converter para " + celsius + "°C");
+
+//     if (celsius >= -30 && celsius < 15) {
+//         return console.log("Muito frio");
+//     }
+//     else if (celsius >= 15 && celsius < 20) {
+//         return console.log("Morno");
+//     }
+//     else if (celsius >= 20.8 && celsius < 31) {
+//         return console.log("Calor");
+//     }
+//     else {
+//         return console.log("Muito Calor");
+//     }
+
+// }
+
+// fahrenheToCelciusitConverter(105);
+
+
+// Conversão de graus celsius para kelvin:
+
+// function celciusToKelvinitConverter(celcius) {
+//     let kelvin = (celcius + 273.15).toFixed(1);
+
+//     console.log(celcius + "°C" + " Converter para " + kelvin + "°K");
+
+//     if (kelvin >= -273 && kelvin < 288) {
+//         return console.log("Muito frio");
+//     }
+//     else if (kelvin >= 288 && kelvin < 293) {
+//         return console.log("Morno");
+//     }
+//     else if (kelvin >= 293 && kelvin < 304) {
+//         return console.log("Calor");
+//     }
+//     else {
+//         return console.log("Muito Calor");
+//     }
+
+// }
+
+// celciusToKelvinitConverter(25);
+
+
+// Conversão de graus celsius para kelvin:
+
+// function fahrenheToCelciusitConverter(kelvin) {
+//     let celsius = (kelvin - 273.15).toFixed(1);
+
+//     console.log(kelvin + "°k" + " Converter para " + celsius + "°C");
+
+//     if (celsius >= -30 && celsius < 15) {
+//         return console.log("Muito frio");
+//     }
+//     else if (celsius >= 15 && celsius < 20) {
+//         return console.log("Morno");
+//     }
+//     else if (celsius >= 20.8 && celsius < 31) {
+//         return console.log("Calor");
+//     }
+//     else {
+//         return console.log("Muito Calor");
+//     }
+
+// }
+
+// fahrenheToCelciusitConverter(295);
 
