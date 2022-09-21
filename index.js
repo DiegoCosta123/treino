@@ -822,3 +822,235 @@
 
 // fahrenheToCelciusitConverter(295);
 
+
+// Numero maior:
+
+// function highestValue(a, b) {
+//     if (a > b) {
+//         return console.log("Número maior é: " + a);
+//     }
+// else if (a === b) {
+//     return console.log("Número é igual");
+// }
+//     else if (b > a) {
+//         return console.log("Número maior é: " + b);
+//     }
+//     else {
+//         console.log("Menor");
+//     }
+// }
+
+// highestValue(50, 52);
+
+
+// function highestValue(a, b, c) {
+//     if (a > b && a > c) {
+//         return console.log("Número maior é: " + a);
+//     }
+//     else if (b > a && b > c) {
+//         return console.log("Número maior é: " + b);
+//     }
+//     else if (c > a && c > b) {
+//         return console.log("Número maior é: " + c);
+//     }
+//     else if (a === b || b === c || c === a) {
+//         return console.log("Número é igual");
+//     }
+//     else {
+//         console.log("Menor");
+//     }
+// }
+
+// highestValue(9, 9, 9);
+
+
+// A função `findTriangleType()` encontra o tipo do triângulo para os valores laterais fornecidos usando o operador “==” e “&&” em JavaScript.
+
+// Imprima “Triângulo equilátero”. se os valores para todos os lados1, lado2 e lado3 forem iguais.
+// Imprima “Triângulo isósceles”. se os valores para cada lado slide1 for igual a side2 ou side2 for igual a side3
+// Senão “triângulo escaleno”. pois os valores de todos os lados não forem iguais.
+
+
+// function findTriangleType(lado1, lado2, lado3) {
+//     if (lado1 == lado2 && lado2 == lado3) {
+//         return console.log("Triângulo equilátero");
+//     }
+//     else if (lado1 == lado2 || lado2 == lado3 || lado3 == lado1) {
+//         return console.log("Triângulo isósceles");
+//     }
+//     else {
+//         console.log("triângulo escaleno");
+//     }
+// }
+
+// findTriangleType(2, 9, 9)
+
+
+// 2. Faça um script que pede duas notas de um aluno. Em seguida ele deve calcular a média do aluno e dar o seguinte resultado:
+
+//     A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
+//     A mensagem "Reprovado", se a média for menor do que sete;
+//     A mensagem "Aprovado com Distinção", se a média for igual a dez.
+
+// function averageGrade(not1, not2) {
+//     let average = (not1 + not2) / 2;
+
+//     if (average >= 6) {
+//         return console.log("Aprovado");
+//     }
+//     else if (average >= 4) {
+//         return console.log("Recuperação");
+//     }
+//     else if (average < 6) {
+//         return console.log("Reprovado");
+//     }
+// }
+
+// averageGrade(3.5, 8.5);
+
+
+// 16. Faça um script que peça um número inteiro e determine se ele é par ou ímpar.
+// Dica: utilize o operador módulo (resto da divisão): %
+
+// function evenOrOdd(num1) {
+//     if (num1 % 2 === 0) {
+//         return console.log("Número é Par: " + num1);
+//     }
+//     else {
+//         return console.log("Número é Ímpar: " + num1);
+//     }
+// }
+
+// evenOrOdd(10)
+
+
+
+// function positiveOrNegative(num) {
+//     if (num > 0) {
+//         return console.log(num + " = Positivo");
+//     }
+//     else {
+//         return console.log(num + " = Negativo")
+//     }
+// }
+// positiveOrNegative(50);
+
+
+// Exemplo Array:
+
+// let numeroArray = [1, 5, 8, 20, 50, 60];
+// console.log(numeroArray.length);
+
+// Objeto Array => nome, idade,  media:
+
+
+// let objeto1 = {
+//     nome: "Diego",
+//     idade: 23,
+
+//     media1: function notasMedias(not1, not2) {
+//         let notas = (not1 + not2) / 2;
+
+//         if (notas >= 6) {
+//             return console.log("APROVADO");
+//         }
+//         else if (notas >= 4) {
+//             return console.log("RECUPERAÇÃO");
+//         }
+//         else {
+//             console.log("REPROVADO");
+//         }
+//     }
+// }
+
+// let objeto2 = {
+//     nome: "Felipe",
+//     idade: 23,
+
+//     mediaNota: function alunoMedia(nota1, nota2) {
+//         let result = (nota1 + nota2) / 2;
+
+//         if (result >= 6) {
+//             return console.log("APROVADO");
+//         }
+//         else if (result >= 4) {
+//             return console.log("RECUPERAÇÃO");
+//         }
+//         else {
+//             return console.log("REPROVADO");
+//         }
+//     }
+// }
+
+// let ObjetoArray = [objeto1, objeto2];
+
+// console.log(ObjetoArray[1].mediaNota(9.0, 8.5));
+
+
+// Exemplo Loop:
+
+// let list = [0, 5, 6, 8, 10]
+
+// for (let index = 0; index <= list.length; index++) {
+//     console.log(index);
+// }
+
+
+// Qual o Perímetro de um quadrado com 10 m de lado?
+// a fórmula é
+// P = L + L + L + L
+
+// function sideSquare(l) {
+//     let side = l + l + l + l;
+//     return console.log("Lado do perímetro é: " + side + "m");
+// }
+
+// sideSquare(10);
+
+// let ObjectSideSquare1 = {
+
+//     square: function squareSide(l) {
+//         let side = l + l + l + l
+//         return console.log(side + "m lados");
+//     }
+// }
+
+// let ObjectSideSquare2 = {
+//     sides: function sideSquare(l, s) {
+//         let square = l * s;
+//         return console.log(square + "m lados");
+//     }
+// }
+
+// let printSquare = [ObjectSideSquare1, ObjectSideSquare2];
+
+// console.log(printSquare[1].sides(10, 4));
+
+
+
+// function factorial(n) {
+//     let answer = 1;
+//     if (n == 0 || n == 1) {
+//         return answer;
+//     } else {
+//         for (var i = n; i >= 1; i--) {
+//             answer = answer * i;
+//         }
+//         return answer;
+//     }
+// }
+// console.log(factorial(5));
+
+
+
+function median() {
+    let mediana = (20 * 3) + (30 * 2) + (35 * 3) + (40 * 2);
+    let divisão = 3 + 2 + 3 + 2;
+
+    let result = mediana / divisão;
+
+    return console.log("Resultado da média é: " + result);
+}
+
+median();
+
