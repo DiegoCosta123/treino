@@ -1043,14 +1043,63 @@
 
 
 
-function median() {
-    let mediana = (20 * 3) + (30 * 2) + (35 * 3) + (40 * 2);
-    let divisão = 3 + 2 + 3 + 2;
+// function median() {
+//     let mediana = (20 * 3) + (30 * 2) + (35 * 3) + (40 * 2);
+//     let divisão = 3 + 2 + 3 + 2;
 
-    let result = mediana / divisão;
+//     let result = mediana / divisão;
 
-    return console.log("Resultado da média é: " + result);
+//     return console.log("Resultado da média é: " + result);
+// }
+
+// median();
+
+
+// function teorema(r, s, t) {
+//     let mult = r * t;
+//     let x = mult / s;
+
+//     return console.log("O valor de x é " + x);
+// }
+
+// teorema(60, 75, 50);
+
+
+// Qual o valor numérico da expressão
+
+// (x**2 + x) / (x - y)
+
+// para x = - 3 e y = 7?
+
+
+// function algebra(x, y) {
+//     let A = x ** 2;
+//     let result = ((A * y) + x) / (x - y);
+
+//     return console.log("Resultado: " + result);
+// }
+
+// algebra(-3, 7);
+
+// ERRADOS
+// let numeros = [1, 5, 6, 8, 10, 2, 3, 45, 36, 15, 10];
+
+// function ordenacao(a, b) {
+//     return a - b;
+// }
+// for (let i = 0; i < numeros.length; i++) {
+//     console.log(numeros.sort(ordenacao));
+// }
+
+
+let numero = [0, 5, 1, 6, 3, 7, 4, 2, 10, 9, 8, 50, 78, 26, 30, 15];
+
+function orderly(a, b) {
+
+    let sorted = a - b
+
+    return console.log(numero.sort(orderly));
 }
 
-median();
+orderly();
 
