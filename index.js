@@ -1098,7 +1098,6 @@ function orderly(a, b) {
 
     let sorted = a - b
 
-    return console.log(numero.sort(orderly));
 }
 
 orderly();
