@@ -1091,14 +1091,53 @@
 //     console.log(numeros.sort(ordenacao));
 // }
 
+// Exemplo do Callback:
 
-let numero = [0, 5, 1, 6, 3, 7, 4, 2, 10, 9, 8, 50, 78, 26, 30, 15];
+// function bemVindo() {
+//     return "Diego";
+// }
 
-function orderly(a, b) {
+// ERRADO:
+// let ResulSomar = (somar) => {
+//     console.log(somar());
+// }
 
-    let sorted = a - b
+// ResulSomar(function (a, b) {
+//     somar = a + b;
+// });
 
-}
 
-orderly();
+//CORREÇÃO:
+
+let ResulSomar = (somar) => {
+    return somar();
+};
+
+let somaNumeros = (a, b) => {
+    const result = a + b;
+    console.log(result);
+    return result;
+};
+
+// ResulSomar(function () {
+//     somaNumeros(10, 10);
+// });
+
+ResulSomar(() => somaNumeros(10, 10));
+
+
+
+// const lista = [7, 5, 9, 1, 3, 2, 4, 6, 8, 10, 15, 11, 14, 13, 12];
+
+// const listOrdenada = lista.sort((a, b) => a - b);
+
+// console.log(listOrdenada);
+
+
+// const lista = [7, 5, 9, 1, 3, 2, 4, 6, 8, 10, 15, 11, 14, 13, 12];
+
+// const listOrdenada = lista.sort((a, b) => a - b);
+// const encontrarValor = lista.find((valor) => valor === 5);
+
+// console.log("Numeros ordenados: " + listOrdenada + "\nEncontrar um número valor: " + encontrarValor);
 
