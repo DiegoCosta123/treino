@@ -1109,21 +1109,21 @@
 
 //CORREÇÃO:
 
-let ResulSomar = (somar) => {
-    return somar();
-};
+// let ResulSomar = (somar) => {
+//     return somar();
+// };
 
-let somaNumeros = (a, b) => {
-    const result = a + b;
-    console.log(result);
-    return result;
-};
+// let somaNumeros = (a, b) => {
+//     const result = a + b;
+//     console.log(result);
+//     return result;
+// };
 
 // ResulSomar(function () {
 //     somaNumeros(10, 10);
 // });
 
-ResulSomar(() => somaNumeros(10, 10));
+// ResulSomar(() => somaNumeros(10, 10));
 
 
 
@@ -1140,4 +1140,124 @@ ResulSomar(() => somaNumeros(10, 10));
 // const encontrarValor = lista.find((valor) => valor === 5);
 
 // console.log("Numeros ordenados: " + listOrdenada + "\nEncontrar um número valor: " + encontrarValor);
+
+
+
+// let ResulSomar = (somar) => {
+//     return somar();
+// };
+
+// let somaNumeros = (a, b) => {
+//     const result = a + b;
+//     console.log(result);
+//     return result;
+// };
+
+// ResulSomar(function () {
+//     somaNumeros(10, 10);
+// });
+
+// ResulSomar(() => somaNumeros(10, 10));
+
+
+// Teste Bhaskara
+
+// const resultBhaskara = (baskara) => {
+//     return baskara();
+// }
+
+// const calcBask = (a, b, c) => {
+//     const potential = b ** 2;
+//     const multiply = 4 * a * c;
+
+//     const result = potential - multiply;
+//     const source = Math.sqrt(result);
+
+//     const X1 = (- b + source) / (2 * a);
+//     const X2 = (- b - source) / (2 * a);
+
+//     console.log("X1 = " + X1 + "\nX2 = " + X2);
+//     return X1, X2;
+// }
+
+// resultBhaskara(() => calcBask(2, -16, -18))
+
+
+// Lista smoar todo;
+
+// let list = [0, 5, 6, 8, 10]
+
+// for (let index = 0; index <= list.length; index++) {
+//     console.log(index);
+// }
+
+
+// let sum = 0;
+// let number = [1, 3, 6, 8, 7, 9];
+
+// for (let i = 0; i < number.length; i++) {
+//     sum = sum + number[i];
+// }
+
+// console.log(sum);
+
+
+
+// no for loop vc tem que dizer qual número é par
+// retornar os números que são par
+// lembra que o for loop te ajuda pq o for loop passar número por número
+// vc tem que fazer uma verificação se é par
+// se tiver, vc retorna o próprio númer
+// se não, retorna false:
+
+
+//Exemplo basico:
+// function numberParAndImpar(numero) {
+//     if (numero % 2 == 0) {
+//         return console.log("Par: " + numero);
+//     }
+//     else {
+//         return console.log("Impar: " + numero);
+//     }
+// }
+
+// numberParAndImpar(130)
+
+
+// Resultado code:
+
+
+
+
+// function pair(list) {
+
+//     for (let i = 0; i < list.length; i++) {
+//         if (list % 2 === 0) {
+//             console.log("Par: " + list[i]);
+//         }
+//         else {
+//             console.log("False " + list[i]);
+//         }
+//     }
+// }
+
+// pair(4);
+
+
+let list = [4, 8, 6, 2, 1, 3];
+let listaPar = [];
+let listaImpar = [];
+
+for (let i = 0; i < list.length; i++) {
+    console.log("Index de cada elemento da lista: ", i);
+    if (list[i] % 2 === 0) {
+        listaPar.push(list[i]);
+        // console.log("Elemento Par da lista: ", list[i]);
+    }
+    else {
+        listaImpar.push(list[i]);
+        // console.log("Elemento Impar da lista: ", list[i]);
+    }
+}
+console.log(listaImpar);
 
