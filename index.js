@@ -1244,20 +1244,91 @@
 // pair(4);
 
 
-let list = [4, 8, 6, 2, 1, 3];
-let listaPar = [];
-let listaImpar = [];
+// let list = [4, 8, 6, 2, 1, 3];
+// let listaPar = [];
+// let listaImpar = [];
 
-for (let i = 0; i < list.length; i++) {
-    console.log("Index de cada elemento da lista: ", i);
-    if (list[i] % 2 === 0) {
-        listaPar.push(list[i]);
-        // console.log("Elemento Par da lista: ", list[i]);
+// for (let i = 0; i < list.length; i++) {
+//     console.log("Index de cada elemento da lista: ", i);
+//     if (list[i] % 2 === 0) {
+//         listaPar.push(list[i]);
+//         // console.log("Elemento Par da lista: ", list[i]);
+//     }
+//     else {
+//         listaImpar.push(list[i]);
+//         // console.log("Elemento Impar da lista: ", list[i]);
+//     }
+// }
+// console.log(listaImpar);
+
+
+// pra descobrir
+// o maior valor de numero no array
+
+// let array = [5, 6, 8, 10, 25, 11, 17];
+// let MaiorArray = 0;
+
+// for (let i = 0; i < array.length; i++) {
+
+//     let numero = array[i];
+
+//     if (numero > MaiorArray) {
+//         MaiorArray = numero;
+//     }
+// }
+
+// console.log(MaiorArray);
+
+
+// vc vai retornar um resultado de todos os números da lista ao quadrado
+// por exemplo
+// let lista = [1, 3, 5 ,7]
+// o resultado tem que ser = [1, 9, 25, 49]
+// lembrando que
+// esse resultado tem que estar em um outro array
+// dica: cria um outro array e da push no resultado pra inserir o resultado
+
+// let lista = [1, 3, 5, 7]
+// let QuadradoLista = [];
+// let somaNumeros = 0;
+
+// for (let i = 0; i < lista.length; i++) {
+//     QuadradoLista.push(lista[i] ** 2);
+//     somaNumeros += lista[i];
+// }
+
+// console.log("Quadrado da Lista: " + QuadradoLista + "\nSomar de todas Listas: " + somaNumeros);
+
+// let lista = [];
+
+// lista.push("Diego");
+// console.log(lista)
+
+
+// Exemplos Push, Filter, Find:
+
+// let numLista = [10, 5, 8, 9];
+
+// let filtLista = numLista.filter((valor) => {
+//     if (valor > 5) {
+//         return valor;
+//     }
+// })
+
+// console.log(filtLista);
+
+
+// Crie uma lista vazia, adicione 5 elementos (sendo números) e em seguida retorne os elementos maiores que 4:
+
+let lista = [];
+
+lista.push(5, 10, 3, 6, 4);
+
+let filtLista = lista.filter((valor) => {
+    if (valor > 4) {
+        return valor;
     }
-    else {
-        listaImpar.push(list[i]);
-        // console.log("Elemento Impar da lista: ", list[i]);
-    }
-}
-console.log(listaImpar);
+})
+
+console.log("Adicionar Array: " + lista + "\nMaior que elemento: " + filtLista);
 
