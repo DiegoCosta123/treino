@@ -1320,15 +1320,74 @@
 
 // Crie uma lista vazia, adicione 5 elementos (sendo números) e em seguida retorne os elementos maiores que 4:
 
-let lista = [];
+// let lista = [];
 
-lista.push(5, 10, 3, 6, 4);
+// lista.push(5, 10, 3, 6, 4);
 
-let filtLista = lista.filter((valor) => {
-    if (valor > 4) {
-        return valor;
-    }
-})
+// let filtLista = lista.filter((valor) => {
+//     if (valor > 4) {
+//         return valor;
+//     }
+// })
 
-console.log("Adicionar Array: " + lista + "\nMaior que elemento: " + filtLista);
+// console.log("Adicionar Array: " + lista + "\nMaior que elemento: " + filtLista);
+
+
+// console.log("Diegão");
+
+// vc vai criar um array de números, e aí vc vai precisar retornar os números repetidos desse array
+// por exemplo
+// let lista = [1, 3, 5 ,7 ,1 ,3]
+// elementos repetidos: [1,3]
+
+// let lista = [1, 3, 5, 7, 1, 3];
+// let repetLista = [];
+
+// for (let x = 0; x < lista.length; x++) {
+//     for (let y = 0; y < lista.length; y++) {
+//         if (x !== y) {
+//             if (lista[x] == lista[y]) {
+//                 repetLista.push(lista[x]);
+//             }
+//         }
+//     }
+// }
+
+// console.log(repetLista);
+
+
+// let lista = [3, 1, 2];
+
+// for (let x = 0; x < lista.length; x++) {
+//     for (let y = 0; y < lista.length; y++) {
+//         console.log("X: " + x, "  Y: " + y);
+//     }
+// }
+
+
+// exercío é o seguinte
+// A gasolina ta custando 4.79 nos postos
+// e o seu carro faz 9km com um litro, ou seja, é uma maria gasolina
+// crie uma função que calcula o consumo de combustível por km
+// mas vc vai criar com parâmetros
+// sendo, o preço da gasolina e quantos km seu carro faz por litro
+// se for menor que 5km é maria gasolina
+// se for maior que 12, é econômico
+
+
+// function costKm(c, s, v) {
+//     let liter = s / c;
+
+//     if (liter > 12) {
+//         return console.log("Economico " + liter);
+//     }
+//     else if (liter < 5) {
+//         return console.log("Maria Gasolina " + liter);
+//     }
+// }
+
+// costKm(15000000, 4.79)
+
+
+// Exemplo Integração JavaScript e HTML:
 
