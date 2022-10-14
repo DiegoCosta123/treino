@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
   "name": "training",
   "version": "1.0.0",
@@ -11,17 +10,3 @@
     "dev": "nodemon -L index.js"
   }
 }
-=======
-{
-  "name": "training",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT",
-  "dependencies": {
-    "nodemon": "^2.0.15"
-  },
-  "scripts": {
-    "dev": "nodemon -L index.js"
-  }
-}
->>>>>>> beb37f07d15218efd3efe77b6572bc41564aeec2
